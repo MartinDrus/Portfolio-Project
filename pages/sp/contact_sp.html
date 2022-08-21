@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;600;800&family=Roboto:ital,wght@0,400;0,500;0,900;1,900&display=swap" rel="stylesheet">
 
 
-    <title>Contact Me</title>
+    <title>Contactar conmigo</title>
   </head>
   <body>
     <header>
@@ -34,11 +34,6 @@
                 <a class="menu-button icon-plus" href="#language-selection-nav" title="Show navigation"></a>
                 <a class="menu-button icon-minus" href="#" title="Hide navigation"></a>
                 <li class="menu-item">
-                    <a href="/pages/sp/contact_sp.html">
-                      <img class="counrty-flags" id="sp-flag" src="/assets/img/languages/spain.png" alt="Spanische Flagge für spanische Sprachübersetzung">
-                    </a>
-                </li>
-                <li class="menu-item">
                     <a href="/pages/pl/contact_pl.html">
                       <img class="counrty-flags" id="pl-flag" src="/assets/img/languages/poland.png" alt="Polnische Flagge für polnische Sprachübersetzung">
                     </a>
@@ -48,11 +43,16 @@
                       <img class="counrty-flags" id="de-flag" src="/assets/img/languages/germany.png" alt="Deutsche Flagge für deutsche Sprachübersetzung">
                     </a>
                 </li>
+                <li class="menu-item">
+                    <a href="/pages/en/contact_en.html">
+                      <img class="counrty-flags" id="uk-flag" src="/assets/img/languages/united-kingdom.png" alt="UK Flagge für englische Sprachübersetzung">
+                    </a>
+                </li>
             </ul>
             </div>
         </div>
 
-        <a href="/index.html"
+        <a href="/pages/sp/index_sp.html"
           ><i id="home-icon"
             class="fa-solid fa-house"
             alt="Home Icon - Leads you to Homepage"
@@ -64,31 +64,31 @@
     </header>
 
     <main>
-      <div id="contact-text"><p>Don't hesitate to send me a message.</p></div>
+      <div id="contact-text"><p>Contactar conmigo</p></div>
       <section id="contact-section">
         <form>
           <fieldset id="fieldset-personal-data">
-            <legend>About You</legend>
+            <legend>sobre ti</legend>
 
 
             <fieldset id="field1">
-              <label for="txt-input-titel"><p>Title:</p></label> 
+              <label for="txt-input-titel"><p>Tytuł:</p></label> 
              
-              <p><input list="gender" id="list-input-titel" required placeholder="-----Choose please-----"/></p>
+              <p><input list="gender" id="list-input-titel" required placeholder="-----Proszę wybierz-----"/></p>
               
 
               <datalist id="gender">
-                <option>Company</option>
-                <option>Female</option>
-                <option>Male</option>
-                <option>Other</option>
+                <option>Firma</option>
+                <option>Kobieta</option>
+                <option>Mężczyzna</option>
+                <option>Różny</option>
               </datalist>
             </fieldset>
 
             <fieldset id="field2">
-              <label for="txt-input-name">Name<span class="dot">*</span>: <br>
+              <label for="txt-input-name">nombre<span class="dot">*</span>: <br>
               </label>
-              <p><input type="text" id="txt-input-name" required placeholder="John Doe"/></p>
+              <p><input type="text" id="txt-input-name" required placeholder="Jakub Nowak"/></p>
 
             </fieldset>
 
@@ -96,18 +96,18 @@
   
               <fieldset id="field3">
                 <fieldset>
-                  <label for="txt-input-street"><p>Street:</p></label>
-                  <input type="text" id="txt-input-street" placeholder="optional" />
+                  <label for="txt-input-street"><p>Ulica:</p></label>
+                  <input type="text" id="txt-input-street" placeholder="opcjonalnie" />
                 </fieldset>
     
                 <fieldset>
-                  <label for="txt-input-zipcode"><p>Zipcode:</p></label>
-                  <input type="text" id="txt-input-zipcode" placeholder="optional" />
+                  <label for="txt-input-zipcode"><p>Kod Pocztowy:</p></label>
+                  <input type="text" id="txt-input-zipcode" placeholder="opcjonalnie" />
                 </fieldset>
     
                 <fieldset>
-                  <label for="txt-input-city"><p>City:</p></label>
-                  <input type="text" id="txt-input-city" placeholder="optional" />
+                  <label for="txt-input-city"><p>Miasto:</p></label>
+                  <input type="text" id="txt-input-city" placeholder="opcjonalnie" />
                 </fieldset>
               </fieldset>
 
@@ -116,27 +116,27 @@
 
               <fieldset id="field4">
                 <fieldset>
-                  <label for="tel-input-phone"><p>Phone<span class="dot">*</span>:</p></label>
-                  <input type="tel" id="tel-input-phone" pattern="[0-9]{3,5}[0-9]{3,10}" required  placeholder="+4420 / 123123"/>
+                  <label for="tel-input-phone"><p>Tel.<span class="dot">*</span>:</p></label>
+                  <input type="tel" id="tel-input-phone" pattern="[0-9]{3,5}[0-9]{3,10}" required  placeholder="+4822 / 123123"/>
                 </fieldset>
                 <fieldset>
                   <label for="email-input-email"><p>eMail<span class="dot">*</span>:</p></label>
-                  <input type="email" id="email-input-email" placeholder="johndoe@mail.de" required/>
+                  <input type="email" id="email-input-email" placeholder="przykład@mail.pl" required/>
                 </fieldset>
               </fieldset>
 
             <!-- Text-Area -->
   
-              <label for="textarea-comments">Your message:</label>
+              <label for="textarea-comments">Twoja wiadomość:</label>
   
-              <textarea id="textearea-comments" cols="30" rows="10" placeholder="Tell me here what's on your mind."></textarea>
+              <textarea id="textearea-comments" cols="30" rows="10" placeholder="cokolwiek wpisz tutaj"></textarea>
 
 
 
           </fieldset>
 
           <fieldset id="button">
-            <input type="submit" id="submit" value="Submit"/>
+            <input type="submit" id="submit" value="Wyślij"/>
           </fieldset>
         </form>
       </section>

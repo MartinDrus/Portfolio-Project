@@ -16,90 +16,103 @@
     <link rel="stylesheet" href="/css/projects.css" />
     <link rel="stylesheet" href="/css/nav-bar.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;600;800&family=Roboto:ital,wght@0,400;0,500;0,900;1,900&display=swap" rel="stylesheet">
 
-    <title>Projekte</title>
+
+
+    <title>Portfolio</title>
   </head>
   <body>
     <header>
       <div id="left">
-        <h2>Meine Projekte</h2>
+        <h1>Meine Projekte</h1>
       </div>
-      <div id="right">
+      <div id="right-pro">
 
-          <div class="hexagon" id="hexa-nav">
+        <div class="hexagon" id="hexa-nav">
             <div class="content">
               <img id="world-pic" src="/assets/img/languages/earth.png" alt="Picture of the Globe">
-  
               <ul id="language-selection-nav">
                 <a class="menu-button icon-plus" href="#language-selection-nav" title="Show navigation"></a>
                 <a class="menu-button icon-minus" href="#" title="Hide navigation"></a>
                 <li class="menu-item">
-                    <a href="/pages/en/myprojects_en.html">
+                    <a href="/pages/sp/myprojects_sp.html">
                       <img class="counrty-flags" id="sp-flag" src="/assets/img/languages/spain.png" alt="Spanische Flagge für spanische Sprachübersetzung">
-  
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="/pages/en/myprojects_en.html">
+                    <a href="/pages/pl/myprojects_pl.html">
                       <img class="counrty-flags" id="pl-flag" src="/assets/img/languages/poland.png" alt="Polnische Flagge für polnische Sprachübersetzung">
                     </a>
                 </li>
                 <li class="menu-item">
                     <a href="/pages/en/myprojects_en.html">
-                      <img class="counrty-flags" id="uk-flag" src="/assets/img/languages/united-kingdom.png" alt="UK Flagge für englische Sprachübersetzung">
-  
-                      </a>
+                      <img class="counrty-flags" id="en-flag" src="/assets/img/languages/united-kingdom.png" alt="UK Flagge für englische Sprachübersetzung">
                     </a>
                 </li>
-              
             </ul>
             </div>
-          </div>
-  
-          <a href="/index.html"
-            ><i id="home-icon"
-              class="fa-solid fa-house"
-              alt="Home Icon - Leads you to Homepage"
-              <!-- aria-label="Home Icon - Führt zur Startsseite" -->
-            ></i
-          ></a>
         </div>
+
+        <a href="/pages/de/index_de.html"
+          ><i id="home-icon"
+            class="fa-solid fa-house"
+            alt="Home Icon - Leads you to Homepage"
+            title="home"
+            aria-label="Home Icon - Leads to Homepage">
+          </i>
+        </a>
+      </div>
     </header>
 
     <main>
+
       <div id="projects-thumbnail-grid">
-        <div>Blogger Project
-          <video controls>
+        <div id="project-text">
+          <p>Hallo, schön das du diesen Teil der Seite besuchst. Danke für dein Interesse und die Zeit, die du dir nimmst! 
+            Weiter unten sind kurze Videos meiner Projekte. Wie bereits erwähnt ausschließlich mithilfe von HTML/CSS. 
+            Folge mir auf Social Media, füge die Seite zu deinen Favoriten hinzu und verpasse keines meiner nächsten Projekte.
+          </p>
+        </div>
+        <div id="pro1" class="thumbnail"><p>Blogger Project</p>
+          <video autoplay loop controls>
             <source
               src="/assets/project-clips/Blogger Homepage.webm"
               type="video/webm"
               label="Blogger Project"
-              title="Parallax"
+              title="Blogger Project"
             />
-          </video>
+          </videoautoplay>
         </div>
-        <div>Neumorphic Music Player
-          <video controls>
+<!--         <div id="pro1" class="thumbnail"><p>Blogger Project</p>
+          <iframe allowfullscreen allow="autoplay" width="560" height="315" src="/assets/project-clips/Mario_und_Luigi.mp4" frameborder="0">
+        </div> -->
+
+        </iframe>
+        <div id="pro2" class="thumbnail"><p>Neumorphic Music Player</p>
+          <video autoplay loop controls>
             <source
               src="/assets/project-clips/Neumorphic Music Player.webm"
               type="video/webm"
               label="Neumorphic Music Player"
-              title="Parallax"
+              title="Neumorphic Music Player"
             />
           </video>
         </div>
-        <div>Dropdown Menu
-          <video controls>
+        <div id="pro3" class="thumbnail"><p>Dropdown Menu</p>
+          <video autoplay loop controls>
             <source
               src="/assets/project-clips/Dropdown Menu.webm"
               type="video/webm"
               label="Dropdown Menu"
               title="Dropdown Menu"
             />
-          </video>
+          </videoautoplay>
         </div>
-        <div>Startup Page
-         <video controls>
+        <div id="pro4" class="thumbnail"><p>Startup Page</p>
+         <video autoplay loop controls>
           <source
             src="/assets/project-clips/Startup Page.webm"
             type="video/webm"
@@ -108,8 +121,8 @@
           />
         </video>
       </div>
-        <div>Parallax
-          <video controls>
+        <div id="pro5" class="thumbnail"><p>Parallax</p>
+          <video autoplay loop controls>
             <source
               src="/assets/project-clips/Parallax.webm"
               type="video/webm"
@@ -118,13 +131,13 @@
             />
           </video>
         </div>
-          <div>Mario und Luigi
-            <video controls>
+          <div id="pro6" class="thumbnail"><p>Mario und Luigi</p>
+            <video autoplay loop controls>
               <source
-                src="/assets/project-clips/Mario und Luigi.webm"
-                type="video/webm"
-                label="Parallax"
-                title="Parallax"
+                src="/assets/project-clips/Mario_und_Luigi.mp4"
+                type="video/mp4"
+                label="Mario und Luigi"
+                title="Mario und Luigi"
                 />
             </video>
           </div>
