@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#hexagon-frame {
+    width: 80vw;
+    height: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Hexagon Darstellung - Anfang */
+/* Allgemein - Drehung*/
+.hexagon::before, .hexagon-big::before, .hexagon-small::before {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: rotate(-60deg);
+}
+.hexagon::after, .hexagon-big::after, .hexagon-small::after {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: rotate(60deg);
+}
+
+/* Normale Groesse */
+.hexagon {
+    position: relative;
+    display: inline-block;
+    margin: var(--top) var(--right) var(--bottom) var(--left);
+    background-color: var(--honeycomb);
+    text-align: center;
+    transition: all .2s;
+}
+.hexagon, .hexagon::before, .hexagon::after {
+    width: var(--x);
+    height: var(--y);
+    /* Wird der Slash weggelassen, 
+    werden die festgelegten Werte für 
+    horizontale und vertikale Radien verwendet. */
+    border-radius: 20%/5%;
+}
+
+/* Gross */
+.hexagon-big {
+    position: relative;
+    display: inline-block;
+    margin: var(--topB) var(--rightB) var(--bottomB) var(--leftB);
+    background-color: var(--honeycomb);
+    text-align: center;
+    transition: all .2s;
+
+}
+.hexagon-big, .hexagon-big::before, .hexagon-big::after{
+    width: calc(var(--x)*1.3);
+    height: calc(var(--y)*1.3);
+    border-radius: 20%/5%;
+}
+
+/* Klein */
+.hexagon-small {
+    position: relative;
+    display: inline-block;
+    margin: var(--topS) var(--rightS) var(--bottomS) var(--leftS);
+    background-color: var(--honeycomb);
+    transition: all .2s;
+
+}
+.hexagon-small, .hexagon-small::before, .hexagon-small::after{
+    width: calc(var(--x)*0.7);
+    height: calc(var(--y)*0.7);
+    border-radius: 20%/5%;
+}
+/* Hexagon Darstellung - Ende */
+
+
+/* Positionierung der Hexagone  */
+.hexagon:nth-child(even) {
+    /* top: calc(var(--y)/2); */
+    top: 50px;
+}
+
+.hexagon:nth-child(odd) {
+    /* top: calc(var(--y)/2); */
+    top: 1px;
+}
+
+/* Inhalt in den Hexagonen ausrichten */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: var(--y);
+    width: 140%;
+    position: absolute;
+    top: 49%;
+    left: 60%;
+    transform: translate(-57.5%, -50%);
+    z-index: 100;
+}
+
+#big-content {
+    height: calc(var(--y)*1.3);
+}
+
+
+/* Texte in den grossen Kacheln */
+#big-content p{
+    font-size: 30pt;
+    color: var(--hexa-big-text);
+
+}
+
+
+
+
+/* Das Feld um die Länderflaggen zu triggern */
+.content ul > a {
+    height: 135%;
+    width: 240%;
+    transform: translate(-4%, 18%);
+}
+.content p {
+    font-size: var(--norm-text);
+}
+
+#world-pic {
+    height: 82%;
+    width: auto;
+}
+
+/* Versteckte Hexagone */
+#hexagon-frame .invisible {
+    background-color: transparent;
+}
+
+.hexagon:hover, .hexagon-small:hover, .hexagon-big:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+
+} 
+

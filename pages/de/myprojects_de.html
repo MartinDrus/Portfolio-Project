@@ -1,28 +1,136 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Martin Drus">
-    <meta name="description" content="MyPortfolio - UIB-Final-Project">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Martin Drus" />
+    <meta name="description" content="MyPortfolio - UIB-Final-Project" />
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/hexagon.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/projects.css" />
+    <link rel="stylesheet" href="/css/nav-bar.css">
 
-    <title>Portfolio</title>
 
-</head>
-<body>
+    <title>Projekte</title>
+  </head>
+  <body>
     <header>
+      <div id="left">
+        <h2>Meine Projekte</h2>
+      </div>
+      <div id="right">
 
+          <div class="hexagon" id="hexa-nav">
+            <div class="content">
+              <img id="world-pic" src="/assets/img/languages/earth.png" alt="Picture of the Globe">
+  
+              <ul id="language-selection-nav">
+                <a class="menu-button icon-plus" href="#language-selection-nav" title="Show navigation"></a>
+                <a class="menu-button icon-minus" href="#" title="Hide navigation"></a>
+                <li class="menu-item">
+                    <a href="/pages/en/myprojects_en.html">
+                      <img class="counrty-flags" id="sp-flag" src="/assets/img/languages/spain.png" alt="Spanische Flagge für spanische Sprachübersetzung">
+  
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/pages/en/myprojects_en.html">
+                      <img class="counrty-flags" id="pl-flag" src="/assets/img/languages/poland.png" alt="Polnische Flagge für polnische Sprachübersetzung">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/pages/en/myprojects_en.html">
+                      <img class="counrty-flags" id="uk-flag" src="/assets/img/languages/united-kingdom.png" alt="UK Flagge für englische Sprachübersetzung">
+  
+                      </a>
+                    </a>
+                </li>
+              
+            </ul>
+            </div>
+          </div>
+  
+          <a href="/index.html"
+            ><i id="home-icon"
+              class="fa-solid fa-house"
+              alt="Home Icon - Leads you to Homepage"
+              <!-- aria-label="Home Icon - Führt zur Startsseite" -->
+            ></i
+          ></a>
+        </div>
     </header>
 
     <main>
-        
+      <div id="projects-thumbnail-grid">
+        <div>Blogger Project
+          <video controls>
+            <source
+              src="/assets/project-clips/Blogger Homepage.webm"
+              type="video/webm"
+              label="Blogger Project"
+              title="Parallax"
+            />
+          </video>
+        </div>
+        <div>Neumorphic Music Player
+          <video controls>
+            <source
+              src="/assets/project-clips/Neumorphic Music Player.webm"
+              type="video/webm"
+              label="Neumorphic Music Player"
+              title="Parallax"
+            />
+          </video>
+        </div>
+        <div>Dropdown Menu
+          <video controls>
+            <source
+              src="/assets/project-clips/Dropdown Menu.webm"
+              type="video/webm"
+              label="Dropdown Menu"
+              title="Dropdown Menu"
+            />
+          </video>
+        </div>
+        <div>Startup Page
+         <video controls>
+          <source
+            src="/assets/project-clips/Startup Page.webm"
+            type="video/webm"
+            label="Startup Page"
+            title="Startup Page"
+          />
+        </video>
+      </div>
+        <div>Parallax
+          <video controls>
+            <source
+              src="/assets/project-clips/Parallax.webm"
+              type="video/webm"
+              label="Parallax"
+              title="Parallax"
+            />
+          </video>
+        </div>
+          <div>Mario und Luigi
+            <video controls>
+              <source
+                src="/assets/project-clips/Mario und Luigi.webm"
+                type="video/webm"
+                label="Parallax"
+                title="Parallax"
+                />
+            </video>
+          </div>
+      </div>
     </main>
 
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>

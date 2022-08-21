@@ -1,28 +1,228 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Martin Drus">
-    <meta name="description" content="MyPortfolio - UIB-Final-Project">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Martin Drus" />
+    <meta name="description" content="MyPortfolio - UIB-Final-Project" />
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hexagon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/nav-bar.css">
 
-    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;600;800&family=Roboto:ital,wght@0,400;0,500;0,900;1,900&display=swap" rel="stylesheet">
 
-</head>
-<body>
+
+    <title>Martin Drus</title>
+  </head>
+  <body>
     <header>
-
+      <!-- Headline -->
+      <div id="left">
+        <h1><span style="color:rgb(66, 66, 223)">WebDev </span></h1>
+        <h2><span style="color:rgb(120, 120, 165)">  <br>UI/UX Solutions<br></span></h2>
+        <h3><span style="color: rgb(46, 187, 187);">  <br><br> <span id="by">by</span> Martin Drus</span></h3>
+      </div>
+      
+      <div id="right">
+        <div class="hexagon" id="hexa-nav">
+          <div class="content">
+            <img id="world-pic" src="/assets/img/languages/earth.png" alt="Picture of the Globe">
+            <ul id="language-selection-nav">
+              <a class="menu-button icon-plus" href="#language-selection-nav" title="Show navigation"></a>
+              <a class="menu-button icon-minus" href="#0" title="Hide navigation"></a>
+              <li class="menu-item">
+                  <a href="/pages/de/index_de.html">
+                    <img class="country-flags" title="sp-flag" src="/assets/img/languages/spain.png" alt="Spanische Flagge für spanische Sprachübersetzung">
+                  </a>
+              </li>
+              <li class="menu-item">
+                  <a href="/pages/de/index_de.html">
+                    <img class="country-flags" title="pl-flag" src="/assets/img/languages/poland.png" alt="Polnische Flagge für polnische Sprachübersetzung">
+                  </a>
+              </li>
+              <li class="menu-item">
+                  <a href="/pages/de/index_de.html">
+                    <img class="counrty-flags" title="de-flag" src="/assets/img/languages/germany.png" alt="Deutsche Flagge für deutsche Sprachübersetzung">
+                  </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
+      <div id="hexagon-frame">
+
+        <div class="hexagon" id="hellow-query">
+          <div class="content">
+            <p><<span style="color: var(--accent-green); font-size: 18pt;">hello</span> world/></p>
+          </div>
+        </div>
+
+        <!-- Picture -->
+        <div class="hexagon">
+          <div class="content">
+            <img id="my-pics"
+              src="/assets/img/MartinDrus.webp"
+              alt="Ein Foto von dem Ersteller dieser Webseite"
+            />
+          </div>
+        </div>
+
+        <!-- About Me -->
+        <div class="hexagon-big" id="aboutme-query">
+          <a href="/pages/en/aboutme_en.html">
+            <div class="content" id="big-content">
+              <p>Get to know me</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Picture -->
+        <div class="hexagon" id="vanisch-10">
+          <div class="content">
+            <img id="my-pics"
+              src="/assets/img/MartinDrus2.webp"
+              alt="Ein Foto von dem Ersteller dieser Webseite"
+            />
+          </div>
+        </div>
+
+        <!-- unsichtbar-->
+        <div class="hexagon invisible" id="vanish-4">
+          <div class="content"></div>
+        </div>
+
+        <!-- Sprachauswahl -->
+        <div class="hexagon" id="swap-language">
+          <div class="content" id="swap-language">
+            <img id="world-pic" src="/assets/img/languages/earth.png" alt="Picture of the Globe">
+            <ul id="language-selection">
+              <a class="menu-button icon-plus" href="#language-selection" title="Show navigation"></a>
+              <a class="menu-button icon-minus" href="#0" title="Hide navigation"></a>
+              <li class="menu-item">
+                  <a href="/pages/de/index_de.html">
+                    <img class="country-flags" title="sp-flag" src="/assets/img/languages/spain.png" alt="Spanische Flagge für spanische Sprachübersetzung">
+                  </a>
+              </li>
+              <li class="menu-item">
+                  <a href="/pages/de/index_de.html">
+                    <img class="country-flags" title="pl-flag" src="/assets/img/languages/poland.png" alt="Polnische Flagge für polnische Sprachübersetzung">
+                  </a>
+              </li>
+              <li class="menu-item">
+                  <a href="/pages/de/index_de.html">
+                    <img class="country-flags" title="de-flag" src="/assets/img/languages/germany.png" alt="Deutsche Flagge für deutsche Sprachübersetzung">
+                    </a>
+                  </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- HTML/CSS -->
+        <div class="hexagon" id="vanisch-10">
+          <div class="content">
+            <p>Built with HTML/CSS only</p>
+          </div>
+        </div>
+
+        <div class="hexagon-small" id="vanish-9">
+          <div class="content"></div>
+        </div>
+
+        <div class="hexagon" id="vanish-8">
+          <div class="content"></div>
+        </div>
         
+        <!-- Accessibility -->
+        <div class="hexagon" id="vanish-6">
+          <a id="access-link" href="http://https://kulturbanause.de/faq/accessibility/">
+              <div class="content">
+                <p>#Accessibility</p>
+              </div>
+          </a>
+        </div>
+
+        <div class="hexagon-small" id="vanish-7">
+          <div class="content"></div>
+        </div>
+
+        <div class="hexagon" id="vanish-5">
+          <div class="content"></div>
+        </div>
+        
+        <!-- unsichtbar-->
+        <div class="hexagon invisible" id="vanish-3">
+          <div class="content"></div>
+        </div>
+
+        <!-- Projekte -->
+        <div class="hexagon-big" id="project-query">
+          <a href="pages/en/myprojects_en.html">
+            <div class="content" id="big-content">
+              <p>Visit my projects</p> 
+            </div>
+          </a>
+        </div>
+        <!-- unsichtbar-->
+        <div class="hexagon invisible" id="vanish-2">
+          <div class="content"></div>
+        </div>
+
+        <!-- Kontakt -->
+        <div class="hexagon-big" id="contact">
+          <a href="/pages/en/contact_en.html">
+            <div class="content" id="big-content">
+              <p>Feel free to get in touch</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="hexagon" id="vanish-1">
+          <div class="content">
+          </div>
+        </div>
+
+        <!-- unsichtbar-->
+        <div class="hexagon invisible" id="vanish-0">
+          <div class="content"></div>
+        </div>
+
+        <div class="hexagon" id="git-query">
+          <div class="content">
+            <a id="git" class="social-links" href="https://github.com/MartinDrus" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hexagon" id="inst-query">
+          <div class="content">
+            <a id="ista" class="social-links" href="https://github.com/MartinDrus" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hexagon" id="linkedin">
+          <div class="content">
+            <a id="linked" class="social-links" href="https://github.com/MartinDrus" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
-
+      <div></div>
     </footer>
-</body>
+  </body>
 </html>

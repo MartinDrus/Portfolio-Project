@@ -5,8 +5,8 @@ Meine To-Do-Liste:
 
     -[x] Die saubere Ordnerstruktur
     -[x] Ein Github Repository, in das du deine Arbeit hochlädst
-    -[] Wireframes (Für Desktop und Mobil)
-    -[] Deine gewählte Farbpalette
+    -[x] Wireframes (Für Desktop und Mobil)
+    -[x] Deine gewählte Farbpalette
     -[] Möglicherweise auch schon gewählte Bilder
 
 
