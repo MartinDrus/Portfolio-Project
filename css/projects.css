@@ -72,10 +72,6 @@ main {
     height: 100%;
 } 
 
-#projects-thumbnail-grid iframe {
-    width: 200px;
-    height: 100%;
-} 
 
 @media screen and (max-width: 1200px) {
     #projects-thumbnail-grid {

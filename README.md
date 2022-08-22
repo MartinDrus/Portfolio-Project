@@ -34,3 +34,14 @@ Mein Projekt ist infinalen Zügen und ich kann bereits auf die oben stehenden Fr
 2. Beim nächsten Projekt werde ich strukturierter mit meinen Verlinkungen arbeiten. Erst ganz am Ende Page für Page Verlinkung für Verlinkung machen anstatt Platzhalter zu nutzen. Das war nervig. 
 
 3. Naturlich mit JavaScript hinsichtlich eines Bürgermenüs für kleinere Bildschirmgrößen. Die Sprachauswahl und das Formular werde ich auch JS verknüpfen.
+
+Anleitung - was für ein projekt
+
+wie bin ich vorgegangen 
+
+Tagebuch - 1. Tag wireframes
+    2. Tag Hexagone
+
+Projektstruktur - beschreiben
+
+Variablenwahl beschreiben

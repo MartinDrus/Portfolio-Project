@@ -50,10 +50,9 @@ html {
 
 
 body {
-    height: 100vh;
     background-color: var(--background);
     font-family: 'Maven Pro';
-
+    height: 100%;
 }
 
 header {
@@ -77,6 +76,11 @@ h3 {
 }
 
 #by {
+    font-size: 18pt;
+}
+
+#hellow-query > span {
+    color: var(--accent-green); 
     font-size: 18pt;
 }
 
@@ -213,7 +217,27 @@ header #right-pro {
 /* Sprachmenü - Ende */
 
 
+/* Footer */
 
+footer {   
+    background-color: var(--honeycomb);
+    min-height: 100%;
+    height: auto;
+}
+
+#foot {
+    display: flex;
+    justify-content: space-between;
+    height: 15px;
+    margin-top: -15px;
+}
+#foot-left {
+    margin-left: 2%;
+}
+
+#foot-right {
+    margin-right: 2%;
+}
 
 
 

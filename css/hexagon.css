@@ -115,7 +115,6 @@
 #big-content p{
     font-size: 30pt;
     color: var(--hexa-big-text);
-
 }
 
 
@@ -144,6 +143,5 @@
 .hexagon:hover, .hexagon-small:hover, .hexagon-big:hover {
     background-color: var(--hover-color);
     transform: scale(1.05);
-
 } 
 
