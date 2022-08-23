@@ -7,7 +7,8 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;600;800&family=Roboto:ital,wght@0,400;0,500;0,900;1,900&display=swap');
-html {
+
+:root {
     /*Die Formel zur Berechnung der Hexagone lautet: 
     2*(1/(2*tan(pi/6))) 
     = 1.7320508075688772935274463415058723669428052538103806280558069794*/
@@ -44,44 +45,21 @@ html {
     --social_media: #08B9FF;
     --home_icon-color: #08B9FF;
 
+    /* Headline */
+/*     --h1-color: ; */
+    --h1-color: #4C64FF;
+    --h2-color: orange;
+    --h3-color: rgb(46, 187, 187);
+
     /* Original color from globe: #43cb8e */
     --accent-green:  #6DF2A7;
 }
 
-
-body {
-    background-color: var(--background);
-    font-family: 'Maven Pro';
-    height: 100%;
-}
-
+/* Header - Start */
 header {
     display: flex;
     justify-content: space-between;
     height: 7vh;
-}
-
-h1{
-    font-size: var(--h1);
-    margin-left: 2%;
-}
-h2 {
-    font-size: var(--h2);
-    margin-left: 1%;
-    text-align: center;
-}
-h3 {
-    font-size: var(--h3);
-    margin-left: 1%;
-}
-
-#by {
-    font-size: 18pt;
-}
-
-#hellow-query span {
-    color: var(--accent-green); 
-    font-size: 18pt;
 }
 
 header #left {
@@ -90,24 +68,72 @@ header #left {
     align-items: center;
     width: 50%;
 }
+/* Der Header im Fullscreen */
 header #right {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
     width: 30%;
-
     margin-top: 2%;
-
 }
-
+/* Der Header wenn die Seite verkleinert wird */
 header #right-pro {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
     width: 30%;
-
     margin-top: 2%;
+}
+/* Header - Ende */
 
+/* Headline Start*/
+h1 {
+    font-size: var(--h1);
+    margin-left: 2%;
+    color: var(--h1-color);
+}
+h2 {
+    font-size: var(--h2);
+    margin-left: 1%;
+    text-align: center;
+    color: var(--h2-color);
+}
+h3 {
+    font-size: var(--h3);
+    margin-left: 1%;
+    color: var(--h3-color);
+}
+#by {
+    font-size: 18pt;
+}
+/* Headline Ende */
+
+/* Die gleiche Font für die gesamte Page */
+body {
+    background-color: var(--background);
+    font-family: 'Maven Pro';
+    height: 100%;
+}
+
+/* Helper */
+
+.country-flags {
+    border: 1px black solid ;
+    border-radius: 50%;
+}
+
+/* Links */
+.social-links {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.social-links > i {
+    font-size: var(--icon-size);
+    color: var(--social_media);
 }
 
 #home-icon {
@@ -115,6 +141,11 @@ header #right-pro {
     color: var(--home_icon-color);
 }
 
+/* First Hexagon - different color */
+#hellow-query  span {
+    color: var(--accent-green); 
+    font-size: 18pt;
+}
 
 #my-pics {
     position: relative;
@@ -125,22 +156,7 @@ header #right-pro {
     clip-path: polygon(25% 1.5%, 50% 0, 75% 1.5%, 100% 47.5%, 100% 52.5%, 75% 98.5%, 50% 100%, 25% 98.5%, 0 52.5%, 0 47.5%);
 }
 
-/* Links */
-
-.social-links {
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-}
-
-.social-links > i {
-    font-size: var(--icon-size);
-    color: var(--social_media);
-}
-
+/* Verlinkung des Hexagons mit Accessibility Inhalt */
 #access-link {
     text-decoration: none;
     color: var(--text);
@@ -193,11 +209,6 @@ header #right-pro {
     transition: .5s;
 }
 
-.country-flags {
-    border: 1px black solid ;
-    border-radius: 50%;
-}
-
 
 /* UK / DE*/ 
 #language-selection:target>.menu-item:nth-child(5) {
@@ -218,30 +229,20 @@ header #right-pro {
 
 
 /* Footer */
-
+/* in progress */
 footer {   
     background-color: var(--honeycomb);
     min-height: 100%;
     height: auto;
 }
 
-#foot {
-    display: flex;
-    justify-content: space-between;
-    height: 15px;
-    margin-top: -15px;
-}
-#foot-left {
-    margin-left: 2%;
-}
-
-#foot-right {
-    margin-right: 2%;
-}
 
 
 
-/* Media Queries (FULLSCREEN: 1920 x 1080) DESKTOP - FIRST*/
+/* ------------------------------------------ */
+/* --------------Media Queries--------------- */
+/* ------------------------------------------ */
+/* (FULLSCREEN: 1920 x 1080) DESKTOP - FIRST*/
 
 /* On screens: width: 1900px and height: 900px or MORE (min)
 , don´t display Nav-bar*/
@@ -375,7 +376,7 @@ and , don´t display big globe*/
         background-color:  transparent;
     }
 
-    html {
+    :root {
         /* ---Margin-hexagon--- */
         --top: 10px; --right: 55px; --bottom: 10px; --left: 35px;
         /* ---Margin-hexagon-BIG-- */
@@ -432,13 +433,9 @@ and , don´t display big globe*/
 /* 0 -480		smaller smartphones */
 @media screen and (max-width: 478px) {
 
-    html {
+    :root {
             /* ---Margin-hexagon--- */
     --top: 0px; --right: 100px; --bottom: 0px; --left: 100px;
-    /* ---Margin-hexagon-BIG-- */
-/*     --topB: 0px; --rightB: 50px; --bottomB: 0px; --leftB: 50px;
-    /* ---Margin-hexagon-SMALL-- 
-    --topS: 0px; --rightS: 100px; --bottomS: 0px; --leftS: 100px; */
     }
 
     #right #hexa-nav {
@@ -484,7 +481,7 @@ and , don´t display big globe*/
         width: 80%;
     }
 
-    html {
+    :root {
             /* ---Margin-hexagon-BIG-- */
     --topB: 0px; --rightB: 0px; --bottomB: 10px; --leftB: 50px;
     }

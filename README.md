@@ -24,7 +24,13 @@ Folgendes sollte enthalten sein:
         -[x] Womit hatte ich besondere Schwierigkeiten?
         -[x] Wie würde ich die Seite in Zukunft erweitern wollen?
 
-Meine Farbpalette befindet sich im docs Ordner. Das sind grundsätzlich die Farben mit denen ich arbeiten möchte. Ich werde allerdings nicht alle Farben so 1:1 übernehmen könnten im Hinblick auf einen guten Kontrast. Sobald ein Kompromiss gefunden ist kommt ein Update.
+ 1. Die urspüngliche Farbpalette war unpassend
+
+Mein Vorgehen: 
+    Meine Grundidee war es mit Waben zu arbeiten. Wabenförmige Kacheln, die mir ermöglichen Inhalt zu speichern und zu verlinken.
+    Gerne wollte ich von dem typischen Fokus auf Header/Main/Footer absehen. Die Page flüssiger gestalten, Header und Footer schlank halten. 
+    Zudem war es mir wichtig Besuchern meiner Seite die Möglichkeit zu geben mich ggfs. über ein Kontaktformular zu erreichen.
+
 
 Mein Projekt ist infinalen Zügen und ich kann bereits auf die oben stehenden Fragen eingehen. 
 
@@ -36,24 +42,30 @@ Mein Projekt ist infinalen Zügen und ich kann bereits auf die oben stehenden Fr
 3. Naturlich mit JavaScript hinsichtlich eines Bürgermenüs für kleinere Bildschirmgrößen. Die Sprachauswahl und das Formular werde ich auch JS verknüpfen.
 
 
-Dieses Projekt ist für die Zukunft gedacht. Ich möchte mir Optionen schaffen und mit Hinblick auf JS arbeiten. 
-Ich wollte etwas anderes machen - Nicht den Focus auf Header - Main - Footer
+Dieses Projekt ist für die Zukunft gedacht. Ich möchte mir Optionen schaffen und mit Hinblick auf JS arbeiten. Ich muss es gut erweitern können
+Ich wollte etwas anderes machen 
 
 Anleitung - was für ein projekt
 ------------
 Habe zuerst die Hexagone erstellt - diese Hexagone geben mir die möglichkeit frei zu erweitern
-Tagebuch - 1. Tag wireframes
+Tagebuch - 
+    1. Tag wireframes
     2. Tag Hexagone
     3. bam
-
-
 -------------
-Projektstruktur - beschreiben:
-
 Projektstruktur -> erst DE und ENG
 erst Hexagone -> einzelne
-----------
+-------------
 
 besonders:
 Variablenwahl beschreiben
 klassen.auswahl
+-------------
+To-Do's:
+
+Favicon - brauche nur noch ein Icon
+Projektebeschreibung auf Spanisch
+About me - Texte erweitern
+Fotos 
+-auf der Main zuschneiden / kein Clippath
+-in der AboutMe Fotos skalieren

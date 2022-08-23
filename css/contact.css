@@ -21,21 +21,17 @@
     width: 80vw;
     height: 70vh;
     margin: 0 auto;
-
-    
 }
 
 #contact-section form {
     font-size: 18pt;
     width: 100%;
     height: 100%;
-
 }
 
 #contact-section form legend {
     font-size: 26pt;
     font-weight: 600;
-    
     padding: 0.3em;
 }
 
@@ -43,9 +39,6 @@
 #button{
     display: flex;
     justify-content: center;
-    
-    /* box-shadow: 5px 5px 15px 5px white; */
-
     margin-top: 2%;
 }
 
@@ -54,7 +47,6 @@
     border: 2px solid var(--text);
     font-size: 12pt;
 }
-
 
 #field1, #field2, #field3, #field4 {
     text-align: start;
@@ -72,8 +64,6 @@
     display: flex;
     width: 90%;
 }
-
-
 
 #fieldset-personal-data {
 text-align: center;
@@ -93,16 +83,11 @@ text-align: center;
     margin: 15px;
 }
 
-
 /* Helper */
-
-
-
 #submit {
     background-color: var(--accent-green);
     border-radius: 10px;
     width: 40%;
-
 }
 
 #button {
@@ -129,75 +114,57 @@ input {
     text-align: center;
 }
 
-/* Media Queries */
-
+/* ------------------------------------------ */
+/* --------------Media Queries--------------- */
+/* ------------------------------------------ */
 @media screen and (max-width: 768px) {
     #right-pro #hexa-nav {
         transform: scale(0.5);
-
         top: -5px;
-
     }
 }
-
-
 
 @media  screen and (max-width: 600px) {
     #right-pro #hexa-nav {
         display: none;
     }
-
     main #contact-section #fieldset-personal-data {
         display: flex;
         flex-direction: column;
         align-items: center;
-
         margin-top: 40px;
     }
-
     #field3, #field4 {
         display: block;
         margin: 0;
         width: 40%;
     }
-
     input {
         width: 250px;
     }
-
     #contact-text {
         font-size: 12pt;
         margin-bottom: -50px;
     }
-
     #button {
-
         display: flex;
         justify-content: center;
         position: absolute;
-
         margin: 40px 0px 420px 0px;
-/*         margin-top: 40px;
-        margin-bottom: 420px; */
         width: 100%;
         height: 60px;
         transform: scale(1.4);
-
     }
-
     #home-icon {
         transform: scale(0.7);
     }
-
     #contact-section {
         width: 95%;
         height: 100vh;
     }
-
     #fieldset-personal-data fieldset {
         margin: 0px;
     }
-
     #contact-section form {
         font-size: 18pt;
         width: 100%;
