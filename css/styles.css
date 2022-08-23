@@ -79,7 +79,7 @@ h3 {
     font-size: 18pt;
 }
 
-#hellow-query > span {
+#hellow-query span {
     color: var(--accent-green); 
     font-size: 18pt;
 }
@@ -476,6 +476,21 @@ and , don´t display big globe*/
 
     header #right {
         width: 0%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        width: 80%;
+    }
+
+    html {
+            /* ---Margin-hexagon-BIG-- */
+    --topB: 0px; --rightB: 0px; --bottomB: 10px; --leftB: 50px;
+    }
+
+    #contact {
+        margin-left: 50px;
     }
 }
 

@@ -21,6 +21,7 @@
     width: 80vw;
     height: 70vh;
     margin: 0 auto;
+
     
 }
 
@@ -130,7 +131,18 @@ input {
 
 /* Media Queries */
 
-@media  screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+    #right-pro #hexa-nav {
+        transform: scale(0.5);
+
+        top: -5px;
+
+    }
+}
+
+
+
+@media  screen and (max-width: 600px) {
     #right-pro #hexa-nav {
         display: none;
     }
@@ -146,7 +158,7 @@ input {
     #field3, #field4 {
         display: block;
         margin: 0;
-        width: 50%;
+        width: 40%;
     }
 
     input {
@@ -159,10 +171,15 @@ input {
     }
 
     #button {
+
+        display: flex;
+        justify-content: center;
         position: absolute;
-        margin-top: 40px;
-        margin-bottom: 420px;
-        width: 250px;
+
+        margin: 40px 0px 420px 0px;
+/*         margin-top: 40px;
+        margin-bottom: 420px; */
+        width: 100%;
         height: 60px;
         transform: scale(1.4);
 
@@ -186,6 +203,12 @@ input {
         width: 100%;
         height: 900px;
     
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        width: 100%
     }
 }
 

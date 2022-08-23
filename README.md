@@ -35,13 +35,25 @@ Mein Projekt ist infinalen Zügen und ich kann bereits auf die oben stehenden Fr
 
 3. Naturlich mit JavaScript hinsichtlich eines Bürgermenüs für kleinere Bildschirmgrößen. Die Sprachauswahl und das Formular werde ich auch JS verknüpfen.
 
+
+Dieses Projekt ist für die Zukunft gedacht. Ich möchte mir Optionen schaffen und mit Hinblick auf JS arbeiten. 
+Ich wollte etwas anderes machen - Nicht den Focus auf Header - Main - Footer
+
 Anleitung - was für ein projekt
-
-wie bin ich vorgegangen 
-
+------------
+Habe zuerst die Hexagone erstellt - diese Hexagone geben mir die möglichkeit frei zu erweitern
 Tagebuch - 1. Tag wireframes
     2. Tag Hexagone
+    3. bam
 
-Projektstruktur - beschreiben
 
+-------------
+Projektstruktur - beschreiben:
+
+Projektstruktur -> erst DE und ENG
+erst Hexagone -> einzelne
+----------
+
+besonders:
 Variablenwahl beschreiben
+klassen.auswahl
