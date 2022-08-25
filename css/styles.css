@@ -57,6 +57,7 @@
 
 /* Header - Start */
 header {
+    cursor:default ;
     display: flex;
     justify-content: space-between;
     height: 7vh;
@@ -76,14 +77,7 @@ header #right {
     width: 30%;
     margin-top: 2%;
 }
-/* Der Header wenn die Seite verkleinert wird */
-header #right-pro {
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    width: 30%;
-    margin-top: 2%;
-}
+
 /* Header - Ende */
 
 /* Headline Start*/
@@ -146,13 +140,17 @@ body {
     font-size: 18pt;
 }
 
+#hellow-query {
+    cursor: default;
+}
+
 #my-pics {
     position: relative;
     left: 0px;
     top: 0px;
     width: 100%;
     /* Decagon 10points*/
-    clip-path: polygon(25% 1.5%, 50% 0, 75% 1.5%, 100% 47.5%, 100% 52.5%, 75% 98.5%, 50% 100%, 25% 98.5%, 0 52.5%, 0 47.5%);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 /* Verlinkung des Hexagons mit Accessibility Inhalt */
