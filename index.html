@@ -78,36 +78,19 @@
         </div>
 
         <!-- Sprachauswahl -->
-        <div class="hexagon" id="swap-language">
-          <div class="content" id="swap-language">
+        <div class="hexagon">
+          <div class="content pointer" id="lang-select">
             <img id="world-pic" src="assets/img/languages/earth.png" alt="Picture of the Globe">
-            <ul id="language-selection">
-              <a aria-label="Waiting for JS" class="menu-button icon-plus" href="#language-selection" title="Show navigation"></a>
-              <a aria-label="Waiting for JS" class="menu-button icon-minus" href="#0" title="Hide navigation"></a>
-              <li class="menu-item">
-                  <a aria-label="Waiting for JS" href="pages/sp/index_sp.html">
-                    <img class="country-flags" title="sp-flag" src="assets/img/languages/spain.png" alt="Spanische Flagge für spanische Sprachübersetzung">
-                  </a>
-              </li>
-              <li class="menu-item">
-                  <a aria-label="Waiting for JS" href="pages/pl/index_pl.html">
-                    <img class="country-flags" title="pl-flag" src="assets/img/languages/poland.png" alt="Polnische Flagge für polnische Sprachübersetzung">
-                  </a>
-              </li>
-              <li class="menu-item">
-                  <a aria-label="Waiting for JS" href="pages/de/index_de.html">
-                    <img class="country-flags" title="de-flag" src="assets/img/languages/germany.png" alt="Deutsche Flagge für deutsche Sprachübersetzung">
-                    </a>
-                  </a>
-              </li>
-            </ul>
+            <a class="flags" href="pages/pl/index_pl.html"><img src="assets/img/languages/poland.png" alt="Polish Flag"></a>
+            <a class="flags" href="pages/sp/index_sp.html"><img src="assets/img/languages/spain.png" alt="Spanish Flag"></a>
+            <a class="flags" href="pages/de/index_de.html"><img src="assets/img/languages/germany.png" alt="German Flag"></a>
           </div>
         </div>
 
-        <!-- HTML/CSS -->
-        <div class="hexagon" id="vanisch-10">
-          <div class="content">
-            <p>Built with HTML/CSS only</p>
+        <!-- Zusätzlicher SprachauswahlButton -->
+        <div class="hexagon" id="lang-select2">
+          <div class="content pointer">
+            <p>Select your Language</p>
           </div>
         </div>
 
@@ -199,11 +182,8 @@
       </div>
     </main>
 
-    <footer>
-<!--       <div id="foot">
-        <div id="foot-left">© 2022 mdrus® GbR und deren Lizenzgeber. Alle Rechte vorbehalten.</div>
-        <div id="foot-right">Impressum | Datenschutz</div>
-      </div> -->
+
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
