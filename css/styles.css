@@ -8,6 +8,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;600;800&family=Roboto:ital,wght@0,400;0,500;0,900;1,900&display=swap');
 
+
+
 :root {
     /*Die Formel zur Berechnung der Hexagone lautet: 
     2*(1/(2*tan(pi/6))) 
@@ -55,29 +57,92 @@
     --accent-green:  #6DF2A7;
 }
 
+/**  Dropdown - Start */
+.menu-field {
+    display: none;
+
+    transition: all 1s;
+}
+.menu-field.show {
+    display: flex;
+    justify-items: center;
+    margin-top: 3em;
+    margin-bottom: -4rem;
+    height: 12rem;
+    width: 100%;
+    background-color: #1f1d1d;
+}
+
+#dropdown-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+#dropdown-left .hexagon-xs a{
+    font-size: 2rem;
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--text);
+    padding: 40px 25px;
+
+    border-radius: 50%;
+}
+
+
+#dropdown-right {
+    width: 50%;
+    height: 12rem;
+}
+
+#dropdown-right ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+
+
+}
+
+#dropdown-right ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#dropdown-right a {
+    padding-top: 53px;
+    /* Brint nix */
+/*     padding-bottom: -5px;*/    
+    border-radius: 50%;
+}
+
+
+
+/**  Dropdown - Start */
+
+
 /* Header - Start */
 header {
-    cursor:default ;
     display: flex;
     justify-content: space-between;
     height: 7vh;
 }
-
 header #left {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
+    cursor: default;
 }
-/* Der Header im Fullscreen */
 header #right {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    width: 30%;
+    width: 50%;
     margin-top: 2%;
 }
-
 /* Header - Ende */
 
 /* Headline Start*/
@@ -110,7 +175,6 @@ body {
 }
 
 /* Helper */
-
 .pointer {
     cursor: pointer;
 }
@@ -149,9 +213,10 @@ body {
     left: 0px;
     top: 0px;
     width: 100%;
-    /* Decagon 10points*/
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
+
+
 
 /* Verlinkung des Hexagons mit Accessibility Inhalt */
 #access-link {
@@ -159,40 +224,31 @@ body {
     color: var(--text);
 }
 
+
+/** Sprachmenü - Start */
+#world-pic {
+    z-index: 100;
+}
 .flags {
     position: absolute;
     transition-duration: 500ms ;
-    z-index: -1;
 }
-
-
 /* Polish */ 
-#lang-select .flags:nth-child(2).show-flags {
+.lang-select .flags:nth-child(2).show-flags {
     transform: rotate(60deg) translateY(155px) rotate(300deg);
     transition-delay: 0s;
 }
 /* Spanish */
-#lang-select .flags:nth-child(3).show-flags {
+.lang-select .flags:nth-child(3).show-flags {
     transform: rotate(120deg) translateY(155px) rotate(240deg);
     transition-delay: 0.4s;
 }
 /* UK / DE */
-#lang-select .flags:nth-child(4).show-flags {
+.lang-select .flags:nth-child(4).show-flags {
     transform: rotate(180deg) translateY(155px) rotate(180deg);
     transition-delay: 0.2s;
 }
-/* Sprachmenü - Ende */
-
-
-/* Footer */
-/* in progress */
-footer {   
-    background-color: var(--honeycomb);
-    min-height: 100%;
-    height: auto;
-}
-
-
+/** Sprachmenü - Ende */
 
 
 /* ------------------------------------------ */
@@ -200,37 +256,12 @@ footer {
 /* ------------------------------------------ */
 /* (FULLSCREEN: 1920 x 1080) DESKTOP - FIRST*/
 
-/* On screens: width: 1900px and height: 900px or MORE (min)
-, don´t display Nav-bar*/
-@media screen and (min-width: 1900px){
-    #right #hexa-nav {
-        display: none;
-    }
-}
-@media screen and (min-height: 950px) {
-    #right #hexa-nav {
-        display: none;
-    }
-}
+
 
 /* On screens: 1900px and height: 900px or LESS (max)
 and , don´t display big globe*/
-@media screen and (max-width: 1901px) {
-    #swap-language {
-        display: none;
-    }
-    #right #hexa-nav {
-        display: inline-block;
-    }
-}
-@media screen and (max-height: 950px) {
-    #swap-language {
-        display: none;
-    }
-    #right #hexa-nav {
-        display: inline-block;
-    }
-}
+
+
 
 @media screen and (max-width: 1432px){
     #vanish-1, #vanish-2, #vanish-0 {
@@ -256,14 +287,7 @@ and , don´t display big globe*/
     }
 }
 
-@media screen and (max-width: 1252px){
-    #vanish-4 {
-        display: none;
-    }
-    #vanish-2 {
-        display: inline-block;
-    }
-}
+
 
 @media screen and (max-width: 1247px) {
     h2 {
@@ -282,9 +306,7 @@ and , don´t display big globe*/
         display: none;
     }
 
-    #hexa-nav {
-        background-color: transparent;
-    }
+
 }
 
 @media screen and (max-width: 1129px) {
