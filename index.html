@@ -24,14 +24,14 @@
     <header>
       <!-- Headline -->
       <div id="left">
-        <h1>WebDev</h1>
-        <h2><br>UI/UX Solutions<br></h2>
-        <h3><br><br><span id="by">by</span> Martin Drus</h3>
+        <p>WebDev</p>
+        <span id="by">by</span>
+        <h1>Martin Drus</h1>
       </div>
       
-      <div id="right">
+      <div class="right oneicon" id="right">
         <!-- BürgerMenü -->
-        <div class="icon nav-icon-1 drop">
+        <div class="icon nav-icon-1">
           <span></span>
           <span></span>
           <span></span>
@@ -41,61 +41,61 @@
           <span></span>
           <span></span>
           <span></span>
+        </div>
+      </div>
+
+      <div class="menu-field" >
+        <div id="dropdown-wrapper">
+          <div class="hexagon-xs">
+            <div class="content">
+              <p class="dropdown-trigger-globe pointer">Language</p>
+              <img class="dropdown-trigger-globe pointer" id="world-pic-im-dropdown" src="assets/img/languages/earth.png" alt="Picture of the Globe">
+              <div class="second-level-dropdown">
+                <a class="drop-flags" href="pages/sp/index_sp.html">
+                  <img src="assets/img/languages/spain.png" alt="Spanish Flag"></a>
+                <a class="drop-flags" href="pages/de/index_de.html">
+                  <img src="assets/img/languages/germany.png" alt="German Flag"></a>
+                <a class="drop-flags" href="pages/pl/index_pl.html">
+                  <img src="assets/img/languages/poland.png" alt="Polish Flag"></a> 
+              </div>
+            </div>
+          </div>
+   
+         <div class="hexagon-xs">
+            <div class="content">
+              <a href="pages/en/aboutme_en.html">About</a>
+            </div>
+          </div>
+          <div class="hexagon-xs">
+            <div class="content">
+              <a href="pages/en/myprojects_en.html">Projects</a>
+            </div>
+          </div>
+          <div class="hexagon-xs">
+            <div class="content">
+              <a href="pages/en/myprojects_en.html">Contact</a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <div class="menu-field" >
-        <div id="dropdown-left">
-
-
-            <div class="hexagon-xs">
-              <div class="content"><a href="pages/en/aboutme_en.html">About</a></div>
-            </div>
-  
-            <div class="hexagon-xs">
-              <div class="content"><a href="pages/en/myprojects_en.html">Projects</a></div>
-            </div>
-  
-            <div class="hexagon-xs">
-              <div class="content"><a href="pages/en/myprojects_en.html">Kontakt</a></div>
-            </div>
-        
-
-
-
-        </div>
-        <div id="dropdown-right">
-          <ul>
-            <li>
-              <a href="pages/de/index_de.html"><img src="assets/img/languages/germany.png" alt="German Flag"></a>
-            </li>
-            <li>
-             <a href="pages/pl/index_pl.html"><img src="assets/img/languages/poland.png" alt="Polish Flag"></a>
-            </li>
-           <li>
-              <a href="pages/sp/index_sp.html"><img src="assets/img/languages/spain.png" alt="Spanish Flag"></a>
-           </li>
-          </ul>
-        </div>
-
-      </div>
       <div id="hexagon-frame">
 
-        <div class="hexagon" id="hellow-query">
+        <div class="hexagon nopointer" id="hellow-query">
           <div class="content">
-            <p><span>&lt;hello</span> world&/&gt;</p>
+            <p><span>&lt;hello</span> world/&gt;</p>
           </div>
         </div>
 
         <!-- Picture -->
-        <div class="hexagon">
+        <div class="hexagon" id="main-pic-frame" >
           <div class="content">
-            <img id="my-pics"
-              src="assets/img/MartinDrus.webp"
-              alt="Ein Foto von dem Ersteller dieser Webseite"
-            />
+            <div id="imgchange">
+              <img id="my-pics" src="assets/img/MartinDrus.webp" 
+              alt="Ein Foto von dem Ersteller dieser Webseite"/>
+            </div>
           </div>
         </div>
 
@@ -114,7 +114,7 @@
             <img id="my-pics"
               src="assets/img/MartinDrus2.webp"
               alt="Ein Foto von dem Ersteller dieser Webseite"
-            />
+            /> 
           </div>
         </div>
 
@@ -124,7 +124,7 @@
         </div>
 
         <!-- Sprachauswahl -->
-        <div class="hexagon" id="no-scale-for-lang-select">
+        <div class="hexagon" id="lang-select-in-main-area">
           <div class="content pointer lang-select" >
             <img id="world-pic" src="assets/img/languages/earth.png" alt="Picture of the Globe">
             <a class="flags" href="pages/pl/index_pl.html"><img src="assets/img/languages/poland.png" alt="Polish Flag"></a>
@@ -134,7 +134,7 @@
         </div>
 
         <!-- Zusätzlicher SprachauswahlButton -->
-        <div class="hexagon lang-select" >
+        <div class="hexagon lang-select" id="vanish-11">
           <div class="content pointer">
             <p>Select your Language</p>
           </div>
@@ -202,7 +202,7 @@
           <div class="content"></div>
         </div>
 
-        <div class="hexagon" id="git-query">
+        <div class="hexagon social-query" id="git-query">
           <div class="content">
             <a class="social-links" aria-label="Hyperlink to get to my Github Page" href="https://github.com/MartinDrus" target="_blank">
               <i class="fa-brands fa-github"></i>
@@ -210,7 +210,7 @@
           </div>
         </div>
 
-        <div class="hexagon" id="inst-query">
+        <div class="hexagon social-query" id="inst-query">
           <div class="content">
             <a class="social-links" aria-label="Hyperlink to get to my Github Page" href="https://github.com/MartinDrus" target="_blank">
               <i class="fa-brands fa-instagram"></i>
@@ -218,16 +218,19 @@
           </div>
         </div>
 
-        <div class="hexagon" id="linkedin">
+        <div class="hexagon social-query" id="linkedin">
           <div class="content">
             <a class="social-links" aria-label="Hyperlink to get to my Github Page" href="https://github.com/MartinDrus" target="_blank">
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
         </div>
+
       </div>
     </main>
 
+
+    <footer>
 
     </footer>
     <script src="js/script.js"></script>

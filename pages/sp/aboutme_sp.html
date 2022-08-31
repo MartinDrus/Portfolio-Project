@@ -24,51 +24,81 @@
   <body>
       <header>
         <div id="left">
-          <h1>Más información </h1>
+          <h2>Más información </h2>
         </div>
-        <div id="right-pro">
-  
-            <div class="hexagon" id="hexa-nav">
+
+        <div class="sec-level" id="right">
+
+          <a href="../sp/index_sp.html"
+          ><i id="home-icon"
+            class="fa-solid fa-house"
+            alt="Home Icon - Leads you to Homepage"
+            title="home"
+                          ></i
+            ></a>
+
+          <!-- BürgerMenü -->
+          <div class="icon nav-icon-1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+
+
+        </div>
+
+        <div class="menu-field" >
+          <div id="dropdown-wrapper">
+            <div class="hexagon-xs">
               <div class="content">
-                <img id="world-pic" src="../../assets/img/languages/earth.png" alt="Picture of the Globe">
-    
-                <ul id="language-selection-nav">
-                  <a aria-label="JS is coming" class="menu-button icon-plus" href="#language-selection-nav" title="Show navigation"></a>
-                  <a aria-label="JS is coming" class="menu-button icon-minus" href="#" title="Hide navigation"></a>
-                  <li class="menu-item">
-                      <a href="../pl/aboutme_pl.html">
-                        <img class="counrty-flags" id="pl-flag" src="../../assets/img/languages/poland.png" alt="Polnische Flagge für polnische Sprachübersetzung">
-    
-                      </a>
-                  </li>
-                  <li class="menu-item">
-                      <a href="../de/aboutme_de.html">
-                        <img class="counrty-flags" id="de-flag" src="../../assets/img/languages/germany.png" alt="Deutsche Flagge für deutsche Sprachübersetzung">
-                      </a>
-                  </li>
-                  <li class="menu-item">
-                      <a href="../en/aboutme_en.html">
-                        <img class="counrty-flags" id="uk-flag" src="../../assets/img/languages/united-kingdom.png" alt="UK Flagge für englische Sprachübersetzung">
-    
-                        </a>
-                      </a>
-                  </li>
-                
-              </ul>
+                <p class="dropdown-trigger-globe pointer">Idioma</p>
+                <img class="dropdown-trigger-globe pointer" id="world-pic-im-dropdown" src="../../assets/img/languages/earth.png" alt="Picture of the Globe">
+                <div class="second-level-dropdown">
+                  <a class="drop-flags" href="../pl/index_pl.html">
+                    <img src="../../assets/img/languages/poland.png" alt="Polish Flag"></a>
+                  <a class="drop-flags" href="../de/index_de.html">
+                    <img src="../../assets/img/languages/germany.png" alt="German Flag"></a>
+                  <a class="drop-flags" href="../../index.html">
+                    <img src="../../assets/img/languages/united-kingdom.png" alt="UK Flag"></a> 
+                </div>
               </div>
             </div>
-    
-            <a href="../sp/index_sp.html"
-              ><i id="home-icon"
-                class="fa-solid fa-house"
-                alt="Home Icon - Leads you to Homepage"
-                title="home"
-                
-  
-              ></i
-            ></a>
+     
+           <div class="hexagon-xs">
+              <div class="content">
+                <a href="aboutme_sp.html">Sobre mi</a>
+              </div>
+            </div>
+            <div class="hexagon-xs">
+              <div class="content">
+                <a href="myprojects_sp.html">Proyectos</a>
+              </div>
+            </div>
+            <div class="hexagon-xs">
+              <div class="content">
+                <a href="contact_sp.html">Contacto</a>
+              </div>
+            </div>
           </div>
+        </div>
+
       </header>
+
+<!--       <a href="../sp/index_sp.html"
+      ><i id="home-icon"
+        class="fa-solid fa-house"
+        alt="Home Icon - Leads you to Homepage"
+        title="home"
+                      ></i
+        ></a>
+          -->
 
     <main>
       <div id="aboutme-text">
@@ -155,5 +185,7 @@
     </main>
 
     <footer></footer>
+
+    <script src="../../js/script.js"></script>
   </body>
 </html>

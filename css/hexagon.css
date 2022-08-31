@@ -145,12 +145,24 @@
     background-color: transparent;
 }
 
+
+/** Hover **/
 .hexagon:hover, .hexagon-s:hover, .hexagon-xs:hover, .hexagon-xl:hover {
     background-color: var(--hover-color);
     transform: scale(1.05);
 } 
 
-#no-scale-for-lang-select {
+/* no movement for the globe */
+#lang-select-in-main-area {
     transform: scale(1);
+}
+
+#vanisch-10, #no-background-for-pics {
+    background-color: var(--honeycomb);
+}
+
+#dropdown-wrapper .hexagon-xs:hover {
+/*     background-color: var(--honeycomb);
+ */    transform: scale(1);
 }
 
