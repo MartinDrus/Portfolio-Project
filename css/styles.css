@@ -49,7 +49,7 @@
   --leftS: 50px;
 
   /* ALL COLORS */
-  --background: #1a1919;
+  --background: #8f8989;
   --honeycomb: #333131;
   --text: /* #08B9FF */ rgb(251, 245, 245);
   --hexa-big-text: rgb(251, 245, 245);
@@ -76,15 +76,15 @@ header {
 
 }
 /* Headline-Bereich */
-header #left {
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(100% - 120px);
-    cursor: default;
-    border: solid red;
+header .left {
+  float: left;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: calc(100% - 150px);
+  cursor: default;
 }
+
 /* Bürger-Menü-Button-Bereich */
 header .right {
   display: flex;
@@ -92,13 +92,11 @@ header .right {
   justify-content: space-around;
   float: right;
   margin-top: 2rem;
-  width: 120px;
+  width: 150px;
 }
 
-header .right.oneicon {
-  width: 80px;
 
-}
+
 /** Header - Ende */
 
 /* !Dropdown - Start */
@@ -168,7 +166,7 @@ header .right.oneicon {
 
 /* !Headline Start*/
 /* Headline: WebDev ... */
-header #left p {
+header .left p {
   font-size: var(--h1);
   margin-left: 2%;
   color: var(--h1-color);
@@ -183,6 +181,7 @@ header #left p {
 }
 /* Headline: ... Martin Drus */
 h1 {
+  margin-top: 60px;
   margin-left: 15px;
   font-size: var(--h1);
   font-weight: 400;
@@ -197,7 +196,9 @@ h2 {
 
 /* Die selbe Font für die gesamte Page */
 body {
-  background-color: var(--background);
+  background: linear-gradient(-45deg, #ee7752, #9e5e77, #67b5d1, #49dfbc);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   font-family: "Maven Pro";
   height: 100%;
 }
@@ -227,6 +228,7 @@ body {
   color: var(--home_icon-color);
   /* KlickFläche vergößern */
   padding: 5px;
+  margin-right: 20px;
 }
 /* !Helper - Ende*/
 
@@ -305,6 +307,7 @@ don´t display big globe */
 }
 
 @media screen and (max-width: 1625px) {
+  
   #vanish-4,
   #vanish-6,
   #vanish-8,
@@ -317,20 +320,28 @@ don´t display big globe */
 
 /* 769 - 1279	larger Tablets in landscape, Laptops */
 @media screen and (max-width: 1279px) {
-    #vanish-9,
-    #vanish-8,
-    #vanish-7,
-    #vanish-6,
-    #vanish-5,
-    #vanish-4,
-    #vanish-1,
-    #vanish-0 {
-      display: none;
-    }
+  
+  #vanish-9,
+  #vanish-8,    
+  #vanish-7,
+  #vanish-6,
+  #vanish-5,
+  #vanish-4,
+  #vanish-1,
+  #vanish-0 {
+    display: none;
+  }
 }
 
 /* 481 - 768	larger smartphones & Tablets */
 @media screen and (max-width: 768px) {
+  header .right {
+    width: 75px;
+  }
+  header .left {
+    width: calc(100% - 75px);
+
+  }
   main #hexagon-frame {
     width: 90%;
   }
@@ -356,7 +367,6 @@ don´t display big globe */
   main #hexagon-frame {
     height: 1600px;
   }
-
 
 
   /* !Headline Start*/
@@ -440,5 +450,17 @@ don´t display big globe */
     left: -10%;
     transform: scale(0.85);
     justify-content: center;
+  }
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
   }
 }

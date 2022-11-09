@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/hexagon.css">
     <link rel="stylesheet" href="css/nav-bar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="css/clock.css">
     
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,13 +23,17 @@
   <body>
     <header>
       <!-- Headline -->
-      <div id="left">
+      <div class="left">
         <p>WebDev</p>
         <span id="by">by</span>
         <h1>Martin Drus</h1>
+
+        <div id="time-container">
+
+        </div>
       </div>
-      
-      <div class="right oneicon" id="right">
+
+      <div class="right">
         <!-- BürgerMenü -->
         <div class="icon nav-icon-1">
           <span></span>
@@ -111,10 +115,24 @@
         <!-- Picture -->
         <div class="hexagon" id="vanisch-10">
           <div class="content">
-            <img id="my-pics"
+            <!-- <img id="my-pics"
               src="assets/img/MartinDrus2.webp"
               alt="Ein Foto von dem Ersteller dieser Webseite"
-            /> 
+            />  -->
+
+            <div class="clock">
+              <div class="outer-clock-face">
+                <div class="marking marking-one"></div>
+                <div class="marking marking-two"></div>
+                <div class="marking marking-three"></div>
+                <div class="marking marking-four"></div>
+                <div class="inner-clock-face">
+                  <div class="hand hour-hand"></div>
+                  <div class="hand min-hand"></div>
+                  <div class="hand second-hand"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -234,5 +252,6 @@
 
     </footer>
     <script src="js/script.js"></script>
+    
   </body>
 </html>

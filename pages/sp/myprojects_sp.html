@@ -24,45 +24,72 @@
   </head>
   <body>
     <header>
-      <div id="left">
+      <div class="left">
         <h1>Mis proyectos</h1>
       </div>
-      <div id="right-pro">
-
-        <div class="hexagon" id="hexa-nav">
-            <div class="content">
-              <img id="world-pic" src="../../assets/img/languages/earth.png" alt="Picture of the Globe">
-              <ul id="language-selection-nav">
-                <a class="menu-button icon-plus" href="#language-selection-nav" title="Show navigation"></a>
-                <a class="menu-button icon-minus" href="#" title="Hide navigation"></a>
-                <li class="menu-item">
-                    <a href="../../pages/pl/myprojects_pl.html">
-                      <img class="counrty-flags" id="pl-flag" src="../../assets/img/languages/poland.png" alt="Polnische Flagge für polnische Sprachübersetzung">
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="../../pages/de/myprojects_de.html">
-                      <img class="counrty-flags" id="de-flag" src="../../assets/img/languages/germany.png" alt="Deutsche Flagge für deutsche Sprachübersetzung">
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="../../pages/en/myprojects_en.html">
-                      <img class="counrty-flags" id="en-flag" src="../../assets/img/languages/united-kingdom.png" alt="UK Flagge für englische Sprachübersetzung">
-                    </a>
-                </li>
-            </ul>
-            </div>
+      
+      <div class="right">
+        <!-- BürgerMenü -->
+        <div class="icon nav-icon-1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
 
         <a href="../../pages/sp/index_sp.html"
-          ><i id="home-icon"
-            class="fa-solid fa-house"
-            alt="Home Icon - Leads you to Homepage"
-            title="home"
-            >
-          </i>
-        </a>
+        ><i id="home-icon"
+          class="fa-solid fa-house"
+          alt="Home Icon - Leads you to Homepage"
+          title="home"
+          >
+        </i>
+      </a>
       </div>
+
+      <div class="menu-field" >
+        <div id="dropdown-wrapper">
+          <div class="hexagon-xs">
+            <div class="content">
+              <p class="dropdown-trigger-globe pointer">Language</p>
+              <img class="dropdown-trigger-globe pointer" id="world-pic-im-dropdown" src="assets/img/languages/earth.png" alt="Picture of the Globe">
+              <div class="second-level-dropdown">
+                <a class="drop-flags" href="pages/sp/index_sp.html">
+                  <img src="assets/img/languages/spain.png" alt="Spanish Flag"></a>
+                <a class="drop-flags" href="pages/de/index_de.html">
+                  <img src="assets/img/languages/germany.png" alt="German Flag"></a>
+                <a class="drop-flags" href="pages/pl/index_pl.html">
+                  <img src="assets/img/languages/poland.png" alt="Polish Flag"></a> 
+              </div>
+            </div>
+          </div>
+   
+         <div class="hexagon-xs">
+            <div class="content">
+              <a href="pages/en/aboutme_en.html">About</a>
+            </div>
+          </div>
+          <div class="hexagon-xs">
+            <div class="content">
+              <a href="pages/en/myprojects_en.html">Projects</a>
+            </div>
+          </div>
+          <div class="hexagon-xs">
+            <div class="content">
+              <a href="pages/en/myprojects_en.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
     </header>
 
     <main>

@@ -90,11 +90,7 @@ main {
         padding: 15px;
     }
 
-    #project-text{
-        font-size: 15pt;
-        line-height: 1.3;
 
-    }
 }
 
 @media screen and (max-width: 780px) {
@@ -112,9 +108,7 @@ main {
         padding: 15px;
     }
 
-    #right-pro #hexa-nav {
-        display: none;
-    }
+
 
     #project-text{
         font-size: 14pt;
@@ -123,35 +117,5 @@ main {
     }
 }
 
-@media screen and (max-width: 480px) {
-    #project-text{
-        font-size: 12pt;
-        line-height: 1;
 
-    }
-
-    #home-icon {
-        transform: scale(0.7);
-    }
-
-    #projects-thumbnail-grid {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    body {
-        width: 100%;
-    }
-
-    #contact-text {
-        width: 100%;
-
-    }
-
-    #contact-section #fieldset-personal-data fieldset {
-        width: 90%;
-
-    }
-}
 
