@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;600;800&family=Roboto:ital,wght@0,400;0,500;0,900;1,900&display=swap");
@@ -66,6 +67,17 @@
   /* Original color from globe: #43cb8e */
   --accent-green: #6df2a7;
   --main-blue: #08b9ff;
+}
+
+body{
+  overflow: hidden;
+}
+
+#canvas {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:-1;
 }
 
 /** Header - Start */
@@ -196,9 +208,9 @@ h2 {
 
 /* Die selbe Font für die gesamte Page */
 body {
-  background: linear-gradient(-45deg, #ee7752, #9e5e77, #67b5d1, #49dfbc);
+  background: linear-gradient(-45deg, #ee7752, #9e5e77, #67b5d1, #56caaf);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 25s ease infinite;
   font-family: "Maven Pro";
   height: 100%;
 }
