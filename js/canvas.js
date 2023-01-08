@@ -29,7 +29,6 @@ let colorArray = [
     "#C86DFD"
 ]
 
-console.log();
 
 function Circle(x, y, dx, dy, radius) {
     this.x = x;

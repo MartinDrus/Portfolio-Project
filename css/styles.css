@@ -271,7 +271,21 @@ body {
 /* !Sprachmenü - Start */
 #world-pic {
   z-index: 100;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background-image: url('../assets/img/earth-map-scaled.webp');
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: -10px -10px 25px 1px #000 inset, 0 0 20px #000; 
+  animation:spin 30s linear alternate infinite;
 }
+
+@keyframes spin {
+  100%{background-position:100%;}
+}
+
+
 #lang-select-in-main-area .flags {
   position: absolute;
   transition-duration: 500ms;
