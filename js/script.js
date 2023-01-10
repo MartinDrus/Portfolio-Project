@@ -18,6 +18,19 @@ const secondHand = document.querySelector('.second-hand');
 const minsHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 
+const hexagone = document.querySelector("#world-pic");
+
+document.querySelector(".canvasToggler").addEventListener("click", () => {
+  let canContainer = document.querySelector("#canvasContainer");
+  canContainer.classList.toggle("displayNone");
+
+})
+
+
+  hexagone.addEventListener("click", () => {
+    hexagone.classList.add("clickEffect");
+  })
+
 
 /* Schleife läuft durch die Klickfelder  */
  clickAreas.forEach(function(item) {
@@ -48,37 +61,37 @@ icons.forEach (icon => {
 
 
 //! Picture change
-let settime;
-document.getElementById('imgchange').addEventListener("mouseover", imgchanges);
-document.getElementById('imgchange').addEventListener("mouseout", outtime);
+// let settime;
+// document.getElementById('imgchange').addEventListener("mouseover", imgchanges);
+// document.getElementById('imgchange').addEventListener("mouseout", outtime);
 
-function imgchanges(){
-document.getElementById('my-pics').src = "../../assets/img/MartinDrus2.webp";
-var myArray = ['../../assets/img/MartinDrus.webp', '../../assets/img/MartinDrus2.webp'];
-var count = 2;
-settime = setInterval(function() {
-  if(count >= myArray.length){
-  count = 0;
-  }
-  var rand = myArray[count];
-  document.getElementById('my-pics').src = rand;
-  count++;
-}, 1200);
-}
-function outtime(){
-clearInterval(settime);
-document.getElementById('my-pics').src = "../../assets/img/MartinDrus.webp";
-}
+// function imgchanges(){
+// document.getElementById('my-pics').src = "../../assets/img/MartinDrus2.webp";
+// var myArray = ['../../assets/img/MartinDrus.webp', '../../assets/img/MartinDrus2.webp'];
+// var count = 2;
+// settime = setInterval(function() {
+//   if(count >= myArray.length){
+//   count = 0;
+//   }
+//   var rand = myArray[count];
+//   document.getElementById('my-pics').src = rand;
+//   count++;
+// }, 1200);
+// }
+// function outtime(){
+// clearInterval(settime);
+// document.getElementById('my-pics').src = "../../assets/img/MartinDrus.webp";
+// }
 
 // ! Time
 
-function digitalDate() {
-  let now = new Date();
-  timeContainer.style = ("margin-left: 150px")
-  timeContainer.innerHTML = now;
+// function digitalDate() {
+//   let now = new Date();
+//   // timeContainer.style = ("margin-left: 150px")
+//   timeContainer.innerHTML = now;
 
-}
-setInterval(digitalDate, 1000);
+// }
+// setInterval(digitalDate, 1000);
 
 
 

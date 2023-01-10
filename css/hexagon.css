@@ -36,7 +36,7 @@
     margin: var(--top) var(--right) var(--bottom) var(--left);
     background-color: var(--honeycomb);
     text-align: center;
-    transition: all .2s;
+    transition: all 0.2s;
 }
 .hexagon, .hexagon::before, .hexagon::after {
     width: var(--x);
@@ -114,6 +114,8 @@
     align-items: center;
     justify-content: center;
 
+    
+
     height: var(--y);
     width: 140%;
     position: absolute;
@@ -145,12 +147,17 @@
     background-color: transparent;
 }
 
+.hexamation {
+    transform: rotateY(180deg);
+    transition-duration: 1s;
+}
+
 
 /** Hover **/
-.hexagon:hover, .hexagon-s:hover, .hexagon-xs:hover, .hexagon-xl:hover {
+/* .hexagon:hover, .hexagon-s:hover, .hexagon-xs:hover, .hexagon-xl:hover {
     background-color: var(--hover-color);
     transform: scale(1.05);
-} 
+}  */
 
 /* no movement for the globe */
 #lang-select-in-main-area {
@@ -165,4 +172,73 @@
 /*     background-color: var(--honeycomb);
  */    transform: scale(1);
 }
+
+.clickarea {
+
+}
+
+.clickEffectAus {
+
+    position: relative;
+    top: 2px;
+    left: 0px;
+    right: 0px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+
+
+ 
+    font-size: 16px;
+    color: white;
+    cursor:pointer;
+    user-select:none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+  }
+  
+  /* .clickEffect:hover {
+    transition-duration: 0.1s;
+    background-color: transparent;
+  } */
+  
+  .clickEffect:after {
+
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 0px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+  }
+  
+  .clickEffect:active:after {
+
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  /* .clickEffect:active {
+    z-index: -100;
+
+    top: 3px;
+  } */
 

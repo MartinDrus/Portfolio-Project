@@ -21,16 +21,20 @@
     <title>Martin Drus</title>
   </head>
   <body>
-    <header>
-      <!-- Headline -->
+    <header class="header">
       <div class="left">
-        <p>WebDev</p>
+        <input type="checkbox" id="toggle">
+      </div>
+      <!-- Headline -->
+      <div class="middle">
+        <!-- <p>WebDev</p>
         <span id="by">by</span>
-        <h1>Martin Drus</h1>
+        <h1>Martin Drus</h1> -->
 
-        <div id="time-container">
+          <h1 class="gradient-text">WebDev by Martin Drus</h1>
+        <!-- <div id="time-container">
 
-        </div>
+        </div> -->
       </div>
 
       <div class="right">
@@ -50,7 +54,7 @@
 
       <div class="menu-field" >
         <div id="dropdown-wrapper">
-          <div class="hexagon-xs">
+          <!-- <div class="hexagon-xs">
             <div class="content">
               <p class="dropdown-trigger-globe pointer">Language</p>
               <img class="dropdown-trigger-globe pointer" id="world-pic-im-dropdown" src="assets/img/languages/earth.png" alt="Picture of the Globe">
@@ -80,41 +84,48 @@
               <a href="pages/en/myprojects_en.html">Contact</a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </header>
 
     <main>
-      <canvas id="canvas"></canvas>
+      <canvas id="canvasContainer" class="canvas displayNone"></canvas>
       <div id="hexagon-frame">
 
-        <div class="hexagon nopointer" id="hellow-query">
+        <div data-flip class="hexagon  nopointer" id="hellow-query">
           <div class="content">
-            <p><span>&lt;hello</span> world/&gt;</p>
-          </div>
-        </div>
-
-        <!-- Picture -->
-        <div class="hexagon" id="main-pic-frame" >
-          <div class="content">
-            <div id="imgchange">
-              <img id="my-pics" src="assets/img/MartinDrus.webp" 
-              alt="Ein Foto von dem Ersteller dieser Webseite"/>
+            <div class="clickarea clickEffect" >
+              <p><span>&lt;hello</span> world/&gt;</p>
             </div>
           </div>
         </div>
 
+        <!-- Picture -->
+        <div data-flip class="hexagon " id="main-pic-frame" >
+          <div class="content">
+            <div class="clickarea clickEffect">
+              
+            </div>
+            <!-- <div id="imgchange">
+              <img id="my-pics" src="assets/img/MartinDrus.webp" 
+              alt="Ein Foto von dem Ersteller dieser Webseite"/>
+            </div> -->
+          </div>
+        </div>
+
         <!-- About Me -->
-        <div class="hexagon-xl" id="aboutme-query">
-          <a href="pages/en/aboutme_en.html">
+        <div data-flip class="hexagon-xl " id="aboutme-query">
+          <a >
             <div class="content" id="big-content">
-              <p></p>
+              <div class="clickarea clickEffect">
+                <p>Lebenslauf</p>
+              </div>
             </div>
           </a>
         </div>
 
         <!-- Picture -->
-        <div class="hexagon" id="vanisch-10">
+        <div data-flip class="hexagon " id="vanisch-10">
           <div class="content">
             <!-- <img id="my-pics"
               src="assets/img/MartinDrus2.webp"
@@ -145,7 +156,7 @@
         <!-- Sprachauswahl -->
         <div class="hexagon" id="lang-select-in-main-area">
           <div class="content pointer lang-select" >
-            <div id="world-pic" ></div>
+            <div class="clickEffect" id="world-pic" ></div>
             <!-- <img id="world-pic" src="assets/img/earth-map-scaled.webp" alt="Picture of the Globe"> -->
             <a class="flags" href="pages/pl/index_pl.html"><img src="assets/img/languages/poland.png" alt="Polish Flag"></a>
             <a class="flags" href="pages/sp/index_sp.html"><img src="assets/img/languages/spain.png" alt="Spanish Flag"></a>
@@ -160,28 +171,32 @@
           </div>
         </div>
 
-        <div class="hexagon-s" id="vanish-9">
+        <div data-flip class="hexagon-s " id="vanish-9">
           <div class="content"></div>
         </div>
 
-        <div class="hexagon" id="vanish-8">
+        <div data-flip class="hexagon " id="vanish-8">
           <div class="content"></div>
         </div>
         
         <!-- Accessibility -->
-        <div class="hexagon" id="vanish-6">
-          <a aria-label="Link to Page to read more about Accessibility" id="access-link" href="http://https://kulturbanause.de/faq/accessibility/">
+        <div data-flip  class="hexagon " id="vanish-6">
+          <a aria-label="Link to Page to read more about Accessibility" id="access-link" href="">
               <div class="content">
                 <p>#Accessibility</p>
               </div>
           </a>
         </div>
 
-        <div class="hexagon-s" id="vanish-7">
-          <div class="content"></div>
+        <div data-flip class="hexagon-s " id="vanish-7">
+          <div class="content">
+            <div class="clickEffect canvasToggler" style="font-size: 16pt;">
+              Click me!
+            </div>
+          </div>
         </div>
 
-        <div class="hexagon" id="vanish-5">
+        <div data-flip class="hexagon " id="vanish-5">
           <div class="content"></div>
         </div>
         
@@ -191,7 +206,7 @@
         </div>
 
         <!-- Projekte -->
-        <div class="hexagon-xl" id="project-query">
+        <div data-flip class="hexagon-xl " id="project-query">
           <a href="pages/en/myprojects_en.html">
             <div class="content" id="big-content">
               <p></p> 
@@ -204,7 +219,7 @@
         </div>
 
         <!-- Kontakt -->
-        <div class="hexagon-xl" id="contact">
+        <div data-flip class="hexagon-xl " id="contact">
           <a href="pages/en/contact_en.html">
             <div class="content" id="big-content">
               <p></p>
@@ -212,7 +227,7 @@
           </a>
         </div>
 
-        <div class="hexagon" id="vanish-1">
+        <div data-flip class="hexagon " id="vanish-1">
           <div class="content">
           </div>
         </div>
