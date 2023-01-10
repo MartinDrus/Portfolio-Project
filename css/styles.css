@@ -472,6 +472,11 @@ don´t display big globe */
     margin-bottom: -85px;
   }
 
+  .gitIcon{
+    width: 100px;
+    height: 100px;
+  }
+
 
 
   #dropdown-wrapper .dropdown-trigger-globe,
