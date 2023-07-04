@@ -1,0 +1,257 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#hexagon-frame {
+    width: 80vw;
+    height: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hexagon {
+    position: relative;
+    display: inline-block;
+    margin: var(--top) var(--right) var(--bottom) var(--left);
+    background-color: blue;
+    text-align: center;
+    transition: all 0.2s;
+
+    filter: drop-shadow(10px 10px 2rem rgb(0, 0, 0));
+}
+
+.hexagon-xl {
+    position: relative;
+    display: inline-block;
+    margin: var(--topB) var(--rightB) var(--bottomB) var(--leftB);
+    background-color: var(--honeycomb);
+    text-align: center;
+    transition: all .2s;
+
+    filter: drop-shadow(0 10px 2rem crimson);
+
+}
+
+.hexagon-s {
+    position: relative;
+    display: inline-block;
+    margin: var(--topS) var(--rightS) var(--bottomS) var(--leftS);
+    background-color: var(--honeycomb);
+    transition: all .2s;
+
+    filter: drop-shadow(0 0 1rem crimson);
+
+
+}
+
+.hexagon::before, .hexagon-xl::before, .hexagon-s::before, .hexagon-xs::before {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: rotate(-60deg);
+
+
+    
+}
+.hexagon::after, .hexagon-xl::after, .hexagon-s::after, .hexagon-xs::after {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: rotate(60deg);
+
+
+
+}
+
+.hexagon, .hexagon:before, .hexagon:after {
+    width: var(--x);
+    height: var(--y);
+    /* Wird der Slash weggelassen, 
+    werden die festgelegten Werte für 
+    horizontale und vertikale Radien verwendet. */
+    border-radius: 20%/5%;
+
+    /* filter: drop-shadow(0 -4px 8px #333); */
+
+
+}
+
+.hexagon-xl, .hexagon-xl::before, .hexagon-xl::after{
+    width: calc(var(--x)*1.3);
+    height: calc(var(--y)*1.3);
+    border-radius: 20%/5%;
+}
+
+.hexagon-s, .hexagon-s::before, .hexagon-s::after{
+    width: calc(var(--x)*0.7);
+    height: calc(var(--y)*0.7);
+    border-radius: 20%/5%;
+}
+
+.hexagon-xs {
+    position: relative;
+    display: inline-block;
+    background-color: var(--honeycomb);
+    transition: all .2s;
+
+}
+.hexagon-xs, .hexagon-xs::before, .hexagon-xs::after{
+    width: calc(var(--x)*0.6);
+    height: calc(var(--y)*0.6);
+    border-radius: 20%/5%;
+}
+
+
+/** Hexagon Darstellung - Ende */
+
+
+/* Positionierung der Hexagone  */
+.hexagon:nth-child(even) {
+    /* top: calc(var(--y)/2); */
+    top: 50px;
+}
+
+.hexagon:nth-child(odd) {
+    /* top: calc(var(--y)/2); */
+    top: 1px;
+}
+
+/* Inhalt in den Hexagonen ausrichten */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+    height: var(--y);
+    width: 140%;
+    position: absolute;
+    top: 49%;
+    left: 60%;
+    transform: translate(-57.5%, -50%);
+    z-index: 100;
+}
+
+#big-content {
+    height: calc(var(--y)*1.3);
+}
+
+
+/* Texte in den grossen Kacheln */
+#big-content p{
+    font-size: 30pt;
+    color: var(--hexa-big-text);
+}
+
+.content p {
+    font-size: var(--norm-text);
+}
+
+
+
+/* Versteckte Hexagone */
+#hexagon-frame .invisible {
+    background-color: transparent;
+}
+
+.hexamation {
+    transform: rotateY(180deg);
+    transition-duration: 1s;
+}
+
+
+/** Hover **/
+/* .hexagon:hover, .hexagon-s:hover, .hexagon-xs:hover, .hexagon-xl:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}  */
+
+/* no movement for the globe */
+#lang-select-in-main-area {
+    transform: scale(1);
+}
+
+#vanisch-10, #no-background-for-pics {
+    background-color: var(--honeycomb);
+}
+
+#dropdown-wrapper .hexagon-xs:hover {
+/*     background-color: var(--honeycomb);
+ */    transform: scale(1);
+}
+
+.clickarea {
+
+}
+
+.clickEffectAus {
+
+    position: relative;
+    top: 2px;
+    left: 0px;
+    right: 0px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+
+
+ 
+    font-size: 16px;
+    color: white;
+    cursor:pointer;
+    user-select:none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+  }
+  
+  /* .clickEffect:hover {
+    transition-duration: 0.1s;
+    background-color: transparent;
+  } */
+  
+  .clickEffect:after {
+
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 0px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+  }
+  
+  .clickEffect:active:after {
+
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  /* .clickEffect:active {
+    z-index: -100;
+
+    top: 3px;
+  } */
+

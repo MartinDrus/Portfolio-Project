@@ -27,6 +27,69 @@ document.querySelector(".canvasToggler").addEventListener("click", () => {
 })
 
 
+// !------CV-------
+const curriculumVitae = document.querySelector(".loadCV");
+let inputContainer = document.createElement("div");
+let paragraph = document.querySelector(".cv-label");
+let submitBtn = document.createElement("button");
+
+
+
+
+
+function addInputSection() {
+
+  if(paragraph != null) curriculumVitae.removeChild(paragraph);
+  console.log("🚀 ~ file: script.js:41 ~ addInputSection ~ paragraph", paragraph)
+
+  if(curriculumVitae.childNodes.length <= 2) {
+
+
+    let inputLabel = document.createElement("label");
+    inputLabel.textContent = "Enter the password "
+  
+    let passwordInput = document.createElement("input");
+  
+    submitBtn.textContent = "Submit"
+  
+    inputContainer.appendChild(inputLabel);
+    inputContainer.appendChild(passwordInput);
+    inputContainer.appendChild(submitBtn)
+  
+    curriculumVitae.appendChild(inputContainer);
+  } 
+}
+submitBtn.addEventListener("click", () => passwd(passwordInput.value));
+
+curriculumVitae.addEventListener("click", () => {
+
+  curriculumVitae.classList.remove("clickEffect");
+  console.log("🚀 ~ file: script.js:62 ~ curriculumVitae.addEventListener ~ curriculumVitae", curriculumVitae)
+
+  addInputSection()
+
+});
+
+
+function passwd(inputValue){
+console.log("🚀 ~ file: script.js:63 ~ passwd ~ test", inputValue)
+
+
+  if(inputValue.trim().toLowerCase() == "teacher"){
+    console.log("correct!");
+
+    // curriculumVitae.remove(inputContainer);
+    console.log("🚀 ~ file: script.js:78 ~ passwd ~ curriculumVitae", curriculumVitae)
+    curriculumVitae.appendChild(paragraph);
+  }else{
+    console.log("wrong!");
+  }
+}
+
+
+
+
+// ! ----clickeffect----
   hexagone.addEventListener("click", () => {
     hexagone.classList.add("clickEffect");
   })
@@ -114,4 +177,7 @@ hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 
 
 setInterval(setClock, 1000);
+
+// !--------------TEST----------------
+
 

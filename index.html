@@ -7,10 +7,7 @@
     <meta name="author" content="Martin Drus" />
     <meta name="description" content="MyPortfolio - UIB-Final-Project" />
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/hexagon.css">
-    <link rel="stylesheet" href="css/nav-bar.css">
-    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="./css/styles.css">
     
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,23 +15,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;600;800&family=Roboto:ital,wght@0,400;0,500;0,900;1,900&display=swap" rel="stylesheet">
 
 
-    <title>Martin Drus</title>
+  <title>Martin Drus</title>
   </head>
   <body>
     <header class="header">
       <div class="left">
-        <input type="checkbox" id="toggle">
       </div>
-      <!-- Headline -->
       <div class="middle">
-        <!-- <p>WebDev</p>
-        <span id="by">by</span>
-        <h1>Martin Drus</h1> -->
+          <h1 class="gradient-text">Welcome</h1>
 
-          <h1 class="gradient-text">WebDev by Martin Drus</h1>
-        <!-- <div id="time-container">
-
-        </div> -->
       </div>
 
       <div class="right">
@@ -54,45 +43,15 @@
 
       <div class="menu-field" >
         <div id="dropdown-wrapper">
-          <!-- <div class="hexagon-xs">
-            <div class="content">
-              <p class="dropdown-trigger-globe pointer">Language</p>
-              <img class="dropdown-trigger-globe pointer" id="world-pic-im-dropdown" src="assets/img/languages/earth.png" alt="Picture of the Globe">
-              <div class="second-level-dropdown">
-                <a class="drop-flags" href="pages/sp/index_sp.html">
-                  <img src="assets/img/languages/spain.png" alt="Spanish Flag"></a>
-                <a class="drop-flags" href="pages/de/index_de.html">
-                  <img src="assets/img/languages/germany.png" alt="German Flag"></a>
-                <a class="drop-flags" href="pages/pl/index_pl.html">
-                  <img src="assets/img/languages/poland.png" alt="Polish Flag"></a> 
-              </div>
-            </div>
-          </div>
-   
-         <div class="hexagon-xs">
-            <div class="content">
-              <a href="pages/en/aboutme_en.html"></a>
-            </div>
-          </div>
-          <div class="hexagon-xs">
-            <div class="content">
-              <a href="pages/en/myprojects_en.html">Projects</a>
-            </div>
-          </div>
-          <div class="hexagon-xs">
-            <div class="content">
-              <a href="pages/en/myprojects_en.html">Contact</a>
-            </div>
-          </div>
-        </div> -->
+
       </div>
     </header>
 
-    <main>
+    <content>
       <canvas id="canvasContainer" class="canvas displayNone"></canvas>
       <div id="hexagon-frame">
 
-        <div data-flip class="hexagon  nopointer" id="hellow-query">
+        <div data-flip class="hexagon" id="hellow-query">
           <div class="content">
             <div class="clickarea clickEffect" >
               <p><span>&lt;hello</span> world/&gt;</p>
@@ -104,7 +63,7 @@
         <div data-flip class="hexagon " id="main-pic-frame" >
           <div class="content">
             <div class="clickarea clickEffect">
-              
+              Hallo
             </div>
             <!-- <div id="imgchange">
               <img id="my-pics" src="assets/img/MartinDrus.webp" 
@@ -115,11 +74,9 @@
 
         <!-- About Me -->
         <div data-flip class="hexagon-xl " id="aboutme-query">
-          <a >
+          <a href="https://martindrus.github.io/pacman/" target="_blank">
             <div class="content" id="big-content">
-              <div class="clickarea clickEffect">
-                <p>Lebenslauf</p>
-              </div>
+              <p>Play my PacMan Game</p>
             </div>
           </a>
         </div>
@@ -167,7 +124,7 @@
         <!-- Zusätzlicher SprachauswahlButton -->
         <div class="hexagon lang-select" id="vanish-11">
           <div class="content pointer">
-            <p>Language</p>
+            <p>Sprachwahl</p>
           </div>
         </div>
 
@@ -191,7 +148,7 @@
         <div data-flip class="hexagon-s " id="vanish-7">
           <div class="content">
             <div class="clickEffect canvasToggler" style="font-size: 16pt;">
-              Click me!
+              Klick mich!
             </div>
           </div>
         </div>
@@ -220,9 +177,9 @@
 
         <!-- Kontakt -->
         <div data-flip class="hexagon-xl " id="contact">
-          <a href="pages/en/contact_en.html">
+          <a href="https://fridge-management.vercel.app/" target="_blank">
             <div class="content" id="big-content">
-              <p></p>
+              <p>Kühlschrank Verwaltung</p>
             </div>
           </a>
         </div>
@@ -263,18 +220,18 @@
 
         <div class="hexagon social-query" id="linkedin">
           <div class="content">
-            <a class="social-links" aria-label="Hyperlink to get to my Github Page" href="https://github.com/MartinDrus" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
+            <div class="clickarea clickEffect loadCV">
+              <p class="cv-label" >CV</p>
+            </div>
           </div>
         </div>
 
       </div>
-    </main>
+    </content>
 
 
     <footer>
-
+      <p>impressum</p>
     </footer>
     <script src="./js/canvas.js"></script>
     <script src="./js/script.js"></script>
